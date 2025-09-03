@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario</h1>
+    <p id="description">Dados para o Formulario</p>
+    
+    <form id="survey-form">
+
+        
+        <label id="name-label" for="name">Nome</label>
+        <input type="text" id="name" name="userName" placeholder="Enter your name" required>
+
+        
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="userEmail" placeholder="Enter your email" required>
+
+        
+        <label id="number-label" for="number">Idade</label>
+        <input type="number" id="number" name="userAge" min="10" max="99" placeholder="Age" required>
+
+        
+        <label for="dropdown">Selecione sua função</label>
+        <select id="dropdown" name="userRole" required>
+            <option disabled selected value>Select your role</option>
+            <option value="student">Student</option>
+            <option value="fulltimejob">Full Time Job</option>
+            <option value="learner">Learner</option>
+            <option value="prefernot">Prefer not to say</option>    
+        </select>
+
+        
+        <label>Você gostou do formulário?</label><br>
+        <input type="radio" name="formOpinion" value="yes" checked> Sim
+        <input type="radio" name="formOpinion" value="no"> Não <br><br>
+
+        
+         <label>Formação</label>
+        <input type="checkbox" name="optionOne" value="Medio Completo" checked> Medio Completo
+        <input type="checkbox" name="optionTwo" value="Superior Completo"> Superior Completo   <br><br>
+
+        
+        <textarea id="comments" name="userComments" placeholder="Any comments?" rows="4" cols="50"></textarea>
+
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
